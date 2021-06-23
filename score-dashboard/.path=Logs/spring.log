@@ -1,0 +1,427 @@
+2021-06-23 16:17:45 [restartedMain] INFO  s.s.ScoreDashboardApplication - Starting ScoreDashboardApplication using Java 16.0.1 on HIQSTOL665 with PID 19672 (C:\Deepak\ScoringDashboardProject\score-dashboard\target\classes started by deepakka in c:\Deepak\ScoringDashboardProject\score-dashboard)
+2021-06-23 16:17:45 [restartedMain] INFO  s.s.ScoreDashboardApplication - No active profile set, falling back to default profiles: default
+2021-06-23 16:17:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-23 16:17:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 2 JPA repository interfaces.
+2021-06-23 16:17:46 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-06-23 16:17:46 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-23 16:17:46 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-23 16:17:46 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-23 16:17:46 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1125 ms
+2021-06-23 16:17:46 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2021-06-23 16:17:46 [restartedMain] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-5 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-06-23 16:17:46 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2021-06-23 16:17:46 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-23 16:17:46 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-06-23 16:17:47 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-23 16:17:47 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-23 16:17:47 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-23 16:17:47 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [public/index.html]
+2021-06-23 16:17:47 [restartedMain] WARN  o.s.b.a.batch.JpaBatchConfigurer - JPA does not support custom isolation levels, so locks may not be taken when launching Jobs
+2021-06-23 16:17:47 [restartedMain] INFO  o.s.b.c.r.s.JobRepositoryFactoryBean - No database type set, using meta data indicating: HSQL
+2021-06-23 16:17:47 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+2021-06-23 16:17:47 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-06-23 16:17:47 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-23 16:17:47 [restartedMain] INFO  s.s.ScoreDashboardApplication - Started ScoreDashboardApplication in 2.267 seconds (JVM running for 327.525)
+2021-06-23 16:17:47 [restartedMain] INFO  o.s.b.a.b.JobLauncherApplicationRunner - Running default command line with: []
+2021-06-23 16:17:47 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=importUserRankJob]] launched with the following parameters: [{run.id=1}]
+2021-06-23 16:17:47 [restartedMain] INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [step1]
+2021-06-23 16:17:47 [restartedMain] INFO  o.s.batch.core.step.AbstractStep - Step: [step1] executed in 75ms
+2021-06-23 16:17:47 [restartedMain] INFO  s.s.d.UserRankJobCompletionNotificationListener - !!! JOB FINISHED! Time to verify the results
+2021-06-23 16:17:47 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=importUserRankJob]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED] in 104ms
+2021-06-23 16:17:47 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-06-23 16:18:03 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-23 16:18:03 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-23 16:18:03 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-06-23 16:18:03 [http-nio-8080-exec-1] ERROR s.s.controller.CategoryController - this is error....
+2021-06-23 16:18:03 [http-nio-8080-exec-1] ERROR s.s.controller.CategoryController - this is info....
+2021-06-23 16:25:41 [Thread-23] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-23 16:25:41 [Thread-23] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-06-23 16:25:41 [Thread-23] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2021-06-23 16:25:41 [Thread-23] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2021-06-23 16:25:42 [restartedMain] INFO  s.s.ScoreDashboardApplication - Starting ScoreDashboardApplication using Java 16.0.1 on HIQSTOL665 with PID 19672 (C:\Deepak\ScoringDashboardProject\score-dashboard\target\classes started by deepakka in c:\Deepak\ScoringDashboardProject\score-dashboard)
+2021-06-23 16:25:42 [restartedMain] INFO  s.s.ScoreDashboardApplication - No active profile set, falling back to default profiles: default
+2021-06-23 16:25:42 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-23 16:25:42 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 2 JPA repository interfaces.
+2021-06-23 16:25:43 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-06-23 16:25:43 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-23 16:25:43 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-23 16:25:43 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-23 16:25:43 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1108 ms
+2021-06-23 16:25:43 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2021-06-23 16:25:43 [restartedMain] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-6 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-06-23 16:25:43 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+2021-06-23 16:25:43 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-23 16:25:43 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-06-23 16:25:43 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-23 16:25:43 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-23 16:25:43 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-23 16:25:43 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [public/index.html]
+2021-06-23 16:25:43 [restartedMain] WARN  o.s.b.a.batch.JpaBatchConfigurer - JPA does not support custom isolation levels, so locks may not be taken when launching Jobs
+2021-06-23 16:25:43 [restartedMain] INFO  o.s.b.c.r.s.JobRepositoryFactoryBean - No database type set, using meta data indicating: HSQL
+2021-06-23 16:25:43 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+2021-06-23 16:25:43 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-06-23 16:25:43 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-23 16:25:43 [restartedMain] INFO  s.s.ScoreDashboardApplication - Started ScoreDashboardApplication in 1.886 seconds (JVM running for 803.545)
+2021-06-23 16:25:43 [restartedMain] INFO  o.s.b.a.b.JobLauncherApplicationRunner - Running default command line with: []
+2021-06-23 16:25:43 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=importUserRankJob]] launched with the following parameters: [{run.id=1}]
+2021-06-23 16:25:43 [restartedMain] INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [step1]
+2021-06-23 16:25:43 [restartedMain] INFO  o.s.batch.core.step.AbstractStep - Step: [step1] executed in 73ms
+2021-06-23 16:25:43 [restartedMain] INFO  s.s.d.UserRankJobCompletionNotificationListener - !!! JOB FINISHED! Time to verify the results
+2021-06-23 16:25:43 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=importUserRankJob]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED] in 91ms
+2021-06-23 16:25:43 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-06-23 16:26:05 [Thread-28] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-23 16:26:05 [Thread-28] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-06-23 16:26:05 [Thread-28] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+2021-06-23 16:26:05 [Thread-28] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+2021-06-23 16:26:05 [restartedMain] INFO  s.s.ScoreDashboardApplication - Starting ScoreDashboardApplication using Java 16.0.1 on HIQSTOL665 with PID 19672 (C:\Deepak\ScoringDashboardProject\score-dashboard\target\classes started by deepakka in c:\Deepak\ScoringDashboardProject\score-dashboard)
+2021-06-23 16:26:05 [restartedMain] INFO  s.s.ScoreDashboardApplication - No active profile set, falling back to default profiles: default
+2021-06-23 16:26:06 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-23 16:26:06 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 49 ms. Found 2 JPA repository interfaces.
+2021-06-23 16:26:06 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-06-23 16:26:06 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-23 16:26:06 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-23 16:26:06 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-23 16:26:06 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 920 ms
+2021-06-23 16:26:06 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+2021-06-23 16:26:06 [restartedMain] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-7 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-06-23 16:26:06 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+2021-06-23 16:26:06 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-23 16:26:06 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-06-23 16:26:07 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-23 16:26:07 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-23 16:26:07 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-23 16:26:07 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [public/index.html]
+2021-06-23 16:26:07 [restartedMain] WARN  o.s.b.a.batch.JpaBatchConfigurer - JPA does not support custom isolation levels, so locks may not be taken when launching Jobs
+2021-06-23 16:26:07 [restartedMain] INFO  o.s.b.c.r.s.JobRepositoryFactoryBean - No database type set, using meta data indicating: HSQL
+2021-06-23 16:26:07 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+2021-06-23 16:26:07 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-06-23 16:26:07 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-23 16:26:07 [restartedMain] INFO  s.s.ScoreDashboardApplication - Started ScoreDashboardApplication in 1.807 seconds (JVM running for 827.294)
+2021-06-23 16:26:07 [restartedMain] INFO  o.s.b.a.b.JobLauncherApplicationRunner - Running default command line with: []
+2021-06-23 16:26:07 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=importUserRankJob]] launched with the following parameters: [{run.id=1}]
+2021-06-23 16:26:07 [restartedMain] INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [step1]
+2021-06-23 16:26:07 [restartedMain] INFO  o.s.batch.core.step.AbstractStep - Step: [step1] executed in 47ms
+2021-06-23 16:26:07 [restartedMain] INFO  s.s.d.UserRankJobCompletionNotificationListener - !!! JOB FINISHED! Time to verify the results
+2021-06-23 16:26:07 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=importUserRankJob]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED] in 67ms
+2021-06-23 16:26:07 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-06-23 16:26:45 [Thread-33] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-23 16:26:45 [Thread-33] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-06-23 16:26:45 [Thread-33] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+2021-06-23 16:26:45 [Thread-33] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
+2021-06-23 16:26:45 [restartedMain] INFO  s.s.ScoreDashboardApplication - Starting ScoreDashboardApplication using Java 16.0.1 on HIQSTOL665 with PID 19672 (C:\Deepak\ScoringDashboardProject\score-dashboard\target\classes started by deepakka in c:\Deepak\ScoringDashboardProject\score-dashboard)
+2021-06-23 16:26:46 [restartedMain] INFO  s.s.ScoreDashboardApplication - No active profile set, falling back to default profiles: default
+2021-06-23 16:26:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-23 16:26:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 2 JPA repository interfaces.
+2021-06-23 16:26:46 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-06-23 16:26:46 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-23 16:26:46 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-23 16:26:46 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-23 16:26:46 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 590 ms
+2021-06-23 16:26:46 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Starting...
+2021-06-23 16:26:46 [restartedMain] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-8 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-06-23 16:26:46 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Start completed.
+2021-06-23 16:26:46 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-23 16:26:46 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-06-23 16:26:46 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-23 16:26:46 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-23 16:26:46 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-23 16:26:47 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [public/index.html]
+2021-06-23 16:26:47 [restartedMain] WARN  o.s.b.a.batch.JpaBatchConfigurer - JPA does not support custom isolation levels, so locks may not be taken when launching Jobs
+2021-06-23 16:26:47 [restartedMain] INFO  o.s.b.c.r.s.JobRepositoryFactoryBean - No database type set, using meta data indicating: HSQL
+2021-06-23 16:26:47 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+2021-06-23 16:26:47 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-06-23 16:26:47 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-23 16:26:47 [restartedMain] INFO  s.s.ScoreDashboardApplication - Started ScoreDashboardApplication in 1.371 seconds (JVM running for 866.904)
+2021-06-23 16:26:47 [restartedMain] INFO  o.s.b.a.b.JobLauncherApplicationRunner - Running default command line with: []
+2021-06-23 16:26:47 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=importUserRankJob]] launched with the following parameters: [{run.id=1}]
+2021-06-23 16:26:47 [restartedMain] INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [step1]
+2021-06-23 16:26:47 [restartedMain] INFO  o.s.batch.core.step.AbstractStep - Step: [step1] executed in 51ms
+2021-06-23 16:26:47 [restartedMain] INFO  s.s.d.UserRankJobCompletionNotificationListener - !!! JOB FINISHED! Time to verify the results
+2021-06-23 16:26:47 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=importUserRankJob]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED] in 73ms
+2021-06-23 16:26:47 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-06-23 16:33:10 [Thread-38] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-23 16:33:10 [Thread-38] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-06-23 16:33:10 [Thread-38] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown initiated...
+2021-06-23 16:33:10 [Thread-38] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown completed.
+2021-06-23 16:33:10 [restartedMain] INFO  s.s.ScoreDashboardApplication - Starting ScoreDashboardApplication using Java 16.0.1 on HIQSTOL665 with PID 19672 (C:\Deepak\ScoringDashboardProject\score-dashboard\target\classes started by deepakka in c:\Deepak\ScoringDashboardProject\score-dashboard)
+2021-06-23 16:33:10 [restartedMain] INFO  s.s.ScoreDashboardApplication - No active profile set, falling back to default profiles: default
+2021-06-23 16:33:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-23 16:33:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67 ms. Found 2 JPA repository interfaces.
+2021-06-23 16:33:11 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-06-23 16:33:11 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-23 16:33:11 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-23 16:33:12 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-23 16:33:12 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1239 ms
+2021-06-23 16:33:12 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Starting...
+2021-06-23 16:33:12 [restartedMain] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-9 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-06-23 16:33:12 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Start completed.
+2021-06-23 16:33:12 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-23 16:33:12 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-06-23 16:33:12 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-23 16:33:12 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-23 16:33:12 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-23 16:33:12 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [public/index.html]
+2021-06-23 16:33:12 [restartedMain] WARN  o.s.b.a.batch.JpaBatchConfigurer - JPA does not support custom isolation levels, so locks may not be taken when launching Jobs
+2021-06-23 16:33:12 [restartedMain] INFO  o.s.b.c.r.s.JobRepositoryFactoryBean - No database type set, using meta data indicating: HSQL
+2021-06-23 16:33:12 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+2021-06-23 16:33:12 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-06-23 16:33:12 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-23 16:33:12 [restartedMain] INFO  s.s.ScoreDashboardApplication - Started ScoreDashboardApplication in 1.951 seconds (JVM running for 1252.401)
+2021-06-23 16:33:12 [restartedMain] INFO  o.s.b.a.b.JobLauncherApplicationRunner - Running default command line with: []
+2021-06-23 16:33:12 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=importUserRankJob]] launched with the following parameters: [{run.id=1}]
+2021-06-23 16:33:12 [restartedMain] INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [step1]
+2021-06-23 16:33:12 [restartedMain] INFO  o.s.batch.core.step.AbstractStep - Step: [step1] executed in 80ms
+2021-06-23 16:33:12 [restartedMain] INFO  s.s.d.UserRankJobCompletionNotificationListener - !!! JOB FINISHED! Time to verify the results
+2021-06-23 16:33:12 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=importUserRankJob]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED] in 117ms
+2021-06-23 16:33:12 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-06-23 16:34:16 [Thread-43] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-23 16:34:16 [Thread-43] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-06-23 16:34:16 [Thread-43] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown initiated...
+2021-06-23 16:34:16 [Thread-43] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown completed.
+2021-06-23 16:34:17 [restartedMain] INFO  s.s.ScoreDashboardApplication - Starting ScoreDashboardApplication using Java 16.0.1 on HIQSTOL665 with PID 19672 (C:\Deepak\ScoringDashboardProject\score-dashboard\target\classes started by deepakka in c:\Deepak\ScoringDashboardProject\score-dashboard)
+2021-06-23 16:34:17 [restartedMain] INFO  s.s.ScoreDashboardApplication - No active profile set, falling back to default profiles: default
+2021-06-23 16:34:17 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-23 16:34:17 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 2 JPA repository interfaces.
+2021-06-23 16:34:17 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-06-23 16:34:17 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-23 16:34:17 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-23 16:34:17 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-23 16:34:17 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 740 ms
+2021-06-23 16:34:17 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Starting...
+2021-06-23 16:34:17 [restartedMain] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-10 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-06-23 16:34:17 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Start completed.
+2021-06-23 16:34:17 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-23 16:34:17 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-06-23 16:34:17 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-23 16:34:17 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-23 16:34:18 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-23 16:34:18 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [public/index.html]
+2021-06-23 16:34:18 [restartedMain] WARN  o.s.b.a.batch.JpaBatchConfigurer - JPA does not support custom isolation levels, so locks may not be taken when launching Jobs
+2021-06-23 16:34:18 [restartedMain] INFO  o.s.b.c.r.s.JobRepositoryFactoryBean - No database type set, using meta data indicating: HSQL
+2021-06-23 16:34:18 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+2021-06-23 16:34:18 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-06-23 16:34:18 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-23 16:34:18 [restartedMain] INFO  s.s.ScoreDashboardApplication - Started ScoreDashboardApplication in 1.422 seconds (JVM running for 1318.107)
+2021-06-23 16:34:18 [restartedMain] INFO  o.s.b.a.b.JobLauncherApplicationRunner - Running default command line with: []
+2021-06-23 16:34:18 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=importUserRankJob]] launched with the following parameters: [{run.id=1}]
+2021-06-23 16:34:18 [restartedMain] INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [step1]
+2021-06-23 16:34:18 [restartedMain] INFO  o.s.batch.core.step.AbstractStep - Step: [step1] executed in 72ms
+2021-06-23 16:34:18 [restartedMain] INFO  s.s.d.UserRankJobCompletionNotificationListener - !!! JOB FINISHED! Time to verify the results
+2021-06-23 16:34:18 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=importUserRankJob]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED] in 95ms
+2021-06-23 16:34:18 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-06-23 16:34:59 [Thread-48] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-23 16:34:59 [Thread-48] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-06-23 16:34:59 [Thread-48] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown initiated...
+2021-06-23 16:34:59 [Thread-48] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown completed.
+2021-06-23 16:34:59 [restartedMain] INFO  s.s.ScoreDashboardApplication - Starting ScoreDashboardApplication using Java 16.0.1 on HIQSTOL665 with PID 19672 (C:\Deepak\ScoringDashboardProject\score-dashboard\target\classes started by deepakka in c:\Deepak\ScoringDashboardProject\score-dashboard)
+2021-06-23 16:34:59 [restartedMain] INFO  s.s.ScoreDashboardApplication - No active profile set, falling back to default profiles: default
+2021-06-23 16:34:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-23 16:34:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 2 JPA repository interfaces.
+2021-06-23 16:35:00 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-06-23 16:35:00 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-23 16:35:00 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-23 16:35:00 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-23 16:35:00 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 858 ms
+2021-06-23 16:35:00 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Starting...
+2021-06-23 16:35:00 [restartedMain] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-11 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-06-23 16:35:00 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Start completed.
+2021-06-23 16:35:00 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-23 16:35:00 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-06-23 16:35:00 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-23 16:35:00 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-23 16:35:00 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-23 16:35:00 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [public/index.html]
+2021-06-23 16:35:01 [restartedMain] WARN  o.s.b.a.batch.JpaBatchConfigurer - JPA does not support custom isolation levels, so locks may not be taken when launching Jobs
+2021-06-23 16:35:01 [restartedMain] INFO  o.s.b.c.r.s.JobRepositoryFactoryBean - No database type set, using meta data indicating: HSQL
+2021-06-23 16:35:01 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+2021-06-23 16:35:01 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-06-23 16:35:01 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-23 16:35:01 [restartedMain] INFO  s.s.ScoreDashboardApplication - Started ScoreDashboardApplication in 1.664 seconds (JVM running for 1360.856)
+2021-06-23 16:35:01 [restartedMain] INFO  o.s.b.a.b.JobLauncherApplicationRunner - Running default command line with: []
+2021-06-23 16:35:01 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=importUserRankJob]] launched with the following parameters: [{run.id=1}]
+2021-06-23 16:35:01 [restartedMain] INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [step1]
+2021-06-23 16:35:01 [restartedMain] INFO  o.s.batch.core.step.AbstractStep - Step: [step1] executed in 101ms
+2021-06-23 16:35:01 [restartedMain] INFO  s.s.d.UserRankJobCompletionNotificationListener - !!! JOB FINISHED! Time to verify the results
+2021-06-23 16:35:01 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=importUserRankJob]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED] in 127ms
+2021-06-23 16:35:01 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-06-23 16:35:03 [Thread-53] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-23 16:35:03 [Thread-53] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-06-23 16:35:03 [Thread-53] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown initiated...
+2021-06-23 16:35:03 [Thread-53] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown completed.
+2021-06-23 16:35:03 [restartedMain] INFO  s.s.ScoreDashboardApplication - Starting ScoreDashboardApplication using Java 16.0.1 on HIQSTOL665 with PID 19672 (C:\Deepak\ScoringDashboardProject\score-dashboard\target\classes started by deepakka in c:\Deepak\ScoringDashboardProject\score-dashboard)
+2021-06-23 16:35:03 [restartedMain] INFO  s.s.ScoreDashboardApplication - No active profile set, falling back to default profiles: default
+2021-06-23 16:35:04 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-23 16:35:04 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65 ms. Found 2 JPA repository interfaces.
+2021-06-23 16:35:04 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-06-23 16:35:04 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-23 16:35:04 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-23 16:35:04 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-23 16:35:04 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1135 ms
+2021-06-23 16:35:04 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Starting...
+2021-06-23 16:35:04 [restartedMain] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-12 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-06-23 16:35:04 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Start completed.
+2021-06-23 16:35:04 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-23 16:35:04 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-06-23 16:35:04 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-23 16:35:04 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-23 16:35:04 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-23 16:35:04 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [public/index.html]
+2021-06-23 16:35:05 [restartedMain] WARN  o.s.b.a.batch.JpaBatchConfigurer - JPA does not support custom isolation levels, so locks may not be taken when launching Jobs
+2021-06-23 16:35:05 [restartedMain] INFO  o.s.b.c.r.s.JobRepositoryFactoryBean - No database type set, using meta data indicating: HSQL
+2021-06-23 16:35:05 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+2021-06-23 16:35:05 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-06-23 16:35:05 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-23 16:35:05 [restartedMain] INFO  s.s.ScoreDashboardApplication - Started ScoreDashboardApplication in 1.829 seconds (JVM running for 1364.873)
+2021-06-23 16:35:05 [restartedMain] INFO  o.s.b.a.b.JobLauncherApplicationRunner - Running default command line with: []
+2021-06-23 16:35:05 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=importUserRankJob]] launched with the following parameters: [{run.id=1}]
+2021-06-23 16:35:05 [restartedMain] INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [step1]
+2021-06-23 16:35:05 [restartedMain] INFO  o.s.batch.core.step.AbstractStep - Step: [step1] executed in 56ms
+2021-06-23 16:35:05 [restartedMain] INFO  s.s.d.UserRankJobCompletionNotificationListener - !!! JOB FINISHED! Time to verify the results
+2021-06-23 16:35:05 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=importUserRankJob]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED] in 80ms
+2021-06-23 16:35:05 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-06-23 16:35:10 [Thread-58] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-23 16:35:10 [Thread-58] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-06-23 16:35:10 [Thread-58] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Shutdown initiated...
+2021-06-23 16:35:10 [Thread-58] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Shutdown completed.
+2021-06-23 16:35:11 [restartedMain] INFO  s.s.ScoreDashboardApplication - Starting ScoreDashboardApplication using Java 16.0.1 on HIQSTOL665 with PID 19672 (C:\Deepak\ScoringDashboardProject\score-dashboard\target\classes started by deepakka in c:\Deepak\ScoringDashboardProject\score-dashboard)
+2021-06-23 16:35:11 [restartedMain] INFO  s.s.ScoreDashboardApplication - No active profile set, falling back to default profiles: default
+2021-06-23 16:35:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-23 16:35:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+2021-06-23 16:35:11 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-06-23 16:35:11 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-23 16:35:11 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-23 16:35:11 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-23 16:35:11 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 437 ms
+2021-06-23 16:35:11 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Starting...
+2021-06-23 16:35:11 [restartedMain] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-13 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-06-23 16:35:11 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Start completed.
+2021-06-23 16:35:11 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-23 16:35:11 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-06-23 16:35:11 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-23 16:35:11 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-23 16:35:11 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-23 16:35:11 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [public/index.html]
+2021-06-23 16:35:11 [restartedMain] WARN  o.s.b.a.batch.JpaBatchConfigurer - JPA does not support custom isolation levels, so locks may not be taken when launching Jobs
+2021-06-23 16:35:11 [restartedMain] INFO  o.s.b.c.r.s.JobRepositoryFactoryBean - No database type set, using meta data indicating: HSQL
+2021-06-23 16:35:11 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+2021-06-23 16:35:11 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-06-23 16:35:11 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-23 16:35:11 [restartedMain] INFO  s.s.ScoreDashboardApplication - Started ScoreDashboardApplication in 0.959 seconds (JVM running for 1371.764)
+2021-06-23 16:35:11 [restartedMain] INFO  o.s.b.a.b.JobLauncherApplicationRunner - Running default command line with: []
+2021-06-23 16:35:11 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=importUserRankJob]] launched with the following parameters: [{run.id=1}]
+2021-06-23 16:35:12 [restartedMain] INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [step1]
+2021-06-23 16:35:12 [restartedMain] INFO  o.s.batch.core.step.AbstractStep - Step: [step1] executed in 43ms
+2021-06-23 16:35:12 [restartedMain] INFO  s.s.d.UserRankJobCompletionNotificationListener - !!! JOB FINISHED! Time to verify the results
+2021-06-23 16:35:12 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=importUserRankJob]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED] in 81ms
+2021-06-23 16:35:12 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-06-23 16:35:13 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-23 16:35:13 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-23 16:35:13 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2021-06-23 16:43:23 [main] INFO  s.s.CategoryControllerTests - Starting CategoryControllerTests using Java 16.0.1 on HIQSTOL665 with PID 15196 (started by deepakka in C:\Deepak\ScoringDashboardProject\score-dashboard)
+2021-06-23 16:43:23 [main] INFO  s.s.CategoryControllerTests - No active profile set, falling back to default profiles: default
+2021-06-23 16:43:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-23 16:43:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 207 ms. Found 2 JPA repository interfaces.
+2021-06-23 16:43:26 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-23 16:43:27 [main] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-06-23 16:43:27 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-23 16:43:27 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-23 16:43:27 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-06-23 16:43:27 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-23 16:43:27 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-06-23 16:43:29 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-23 16:43:29 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-23 16:43:30 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-23 16:43:31 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [public/index.html]
+2021-06-23 16:43:31 [main] WARN  o.s.b.a.batch.JpaBatchConfigurer - JPA does not support custom isolation levels, so locks may not be taken when launching Jobs
+2021-06-23 16:43:31 [main] INFO  o.s.b.c.r.s.JobRepositoryFactoryBean - No database type set, using meta data indicating: HSQL
+2021-06-23 16:43:31 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+2021-06-23 16:43:32 [main] INFO  s.s.CategoryControllerTests - Started CategoryControllerTests in 10.188 seconds (JVM running for 12.279)
+2021-06-23 16:43:32 [main] INFO  o.s.b.a.b.JobLauncherApplicationRunner - Running default command line with: []
+2021-06-23 16:43:32 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=importUserRankJob]] launched with the following parameters: [{run.id=1}]
+2021-06-23 16:43:32 [main] INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [step1]
+2021-06-23 16:43:32 [main] INFO  o.s.batch.core.step.AbstractStep - Step: [step1] executed in 162ms
+2021-06-23 16:43:32 [main] INFO  s.s.d.UserRankJobCompletionNotificationListener - !!! JOB FINISHED! Time to verify the results
+2021-06-23 16:43:32 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=importUserRankJob]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED] in 214ms
+2021-06-23 16:43:33 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [sinch.scoredashboard.ScoreDashboardApplicationTests], using SpringBootContextLoader
+2021-06-23 16:43:33 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [sinch.scoredashboard.ScoreDashboardApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-06-23 16:43:33 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [sinch.scoredashboard.ScoreDashboardApplicationTests]: ScoreDashboardApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-06-23 16:43:33 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration sinch.scoredashboard.ScoreDashboardApplication for test class sinch.scoredashboard.ScoreDashboardApplicationTests
+2021-06-23 16:43:33 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-06-23 16:43:33 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@134ec0f3, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@258ac1e6, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@491f3fb0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3d0ce151, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@58a0f75b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2b569858, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1b84d03d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@41d8ac75, org.springframework.test.context.event.EventPublishingTestExecutionListener@1e1d813a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1964ef9, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3c2e73ce, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3891db3a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4a778943, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7925e772, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@365a4b9b]
+2021-06-23 16:43:34 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-23 16:43:34 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-06-23 16:43:34 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-06-23 16:43:34 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-06-23 16:54:57 [restartedMain] INFO  s.s.ScoreDashboardApplication - Starting ScoreDashboardApplication using Java 16.0.1 on HIQSTOL665 with PID 16152 (C:\Deepak\ScoringDashboardProject\score-dashboard\target\classes started by deepakka in c:\Deepak\ScoringDashboardProject\score-dashboard)
+2021-06-23 16:54:57 [restartedMain] INFO  s.s.ScoreDashboardApplication - No active profile set, falling back to default profiles: default
+2021-06-23 16:54:57 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-06-23 16:54:57 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-06-23 16:54:58 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-23 16:54:58 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 93 ms. Found 2 JPA repository interfaces.
+2021-06-23 16:54:59 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-06-23 16:54:59 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-23 16:54:59 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-23 16:55:00 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-23 16:55:00 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2959 ms
+2021-06-23 16:55:00 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-23 16:55:00 [restartedMain] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-06-23 16:55:00 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-23 16:55:00 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-23 16:55:01 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-06-23 16:55:01 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-23 16:55:01 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-06-23 16:55:02 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-23 16:55:02 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-23 16:55:03 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-23 16:55:03 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [public/index.html]
+2021-06-23 16:55:04 [restartedMain] WARN  o.s.b.a.batch.JpaBatchConfigurer - JPA does not support custom isolation levels, so locks may not be taken when launching Jobs
+2021-06-23 16:55:04 [restartedMain] INFO  o.s.b.c.r.s.JobRepositoryFactoryBean - No database type set, using meta data indicating: HSQL
+2021-06-23 16:55:04 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+2021-06-23 16:55:04 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-06-23 16:55:04 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-23 16:55:04 [restartedMain] INFO  s.s.ScoreDashboardApplication - Started ScoreDashboardApplication in 8.084 seconds (JVM running for 9.297)
+2021-06-23 16:55:04 [restartedMain] INFO  o.s.b.a.b.JobLauncherApplicationRunner - Running default command line with: []
+2021-06-23 16:55:04 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=importUserRankJob]] launched with the following parameters: [{run.id=1}]
+2021-06-23 16:55:04 [restartedMain] INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [step1]
+2021-06-23 16:55:04 [restartedMain] INFO  o.s.batch.core.step.AbstractStep - Step: [step1] executed in 126ms
+2021-06-23 16:55:04 [restartedMain] INFO  s.s.d.UserRankJobCompletionNotificationListener - !!! JOB FINISHED! Time to verify the results
+2021-06-23 16:55:05 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=importUserRankJob]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED] in 168ms
+2021-06-23 16:56:04 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-23 16:56:04 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-23 16:56:04 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2021-06-23 18:02:23 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h1m23s68ms369µs200ns).
+2021-06-23 19:33:27 [main] INFO  s.s.CategoryControllerTests - Starting CategoryControllerTests using Java 16.0.1 on HIQSTOL665 with PID 10108 (started by deepakka in C:\Deepak\ScoringDashboardProject\score-dashboard)
+2021-06-23 19:33:27 [main] INFO  s.s.CategoryControllerTests - No active profile set, falling back to default profiles: default
+2021-06-23 19:33:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-23 19:33:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 164 ms. Found 2 JPA repository interfaces.
+2021-06-23 19:33:30 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-23 19:33:31 [main] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-06-23 19:33:31 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-23 19:33:31 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-23 19:33:31 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-06-23 19:33:32 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-23 19:33:32 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-06-23 19:33:33 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-23 19:33:33 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-23 19:33:36 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-23 19:33:37 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [public/index.html]
+2021-06-23 19:33:38 [main] WARN  o.s.b.a.batch.JpaBatchConfigurer - JPA does not support custom isolation levels, so locks may not be taken when launching Jobs
+2021-06-23 19:33:38 [main] INFO  o.s.b.c.r.s.JobRepositoryFactoryBean - No database type set, using meta data indicating: HSQL
+2021-06-23 19:33:38 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+2021-06-23 19:33:38 [main] INFO  s.s.CategoryControllerTests - Started CategoryControllerTests in 12.561 seconds (JVM running for 14.98)
+2021-06-23 19:33:38 [main] INFO  o.s.b.a.b.JobLauncherApplicationRunner - Running default command line with: []
+2021-06-23 19:33:38 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=importUserRankJob]] launched with the following parameters: [{run.id=1}]
+2021-06-23 19:33:39 [main] INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [step1]
+2021-06-23 19:33:39 [main] INFO  o.s.batch.core.step.AbstractStep - Step: [step1] executed in 289ms
+2021-06-23 19:33:39 [main] INFO  s.s.d.UserRankJobCompletionNotificationListener - !!! JOB FINISHED! Time to verify the results
+2021-06-23 19:33:39 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=importUserRankJob]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED] in 448ms
+2021-06-23 19:33:40 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [sinch.scoredashboard.ScoreDashboardApplicationTests], using SpringBootContextLoader
+2021-06-23 19:33:40 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [sinch.scoredashboard.ScoreDashboardApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-06-23 19:33:40 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [sinch.scoredashboard.ScoreDashboardApplicationTests]: ScoreDashboardApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-06-23 19:33:40 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration sinch.scoredashboard.ScoreDashboardApplication for test class sinch.scoredashboard.ScoreDashboardApplicationTests
+2021-06-23 19:33:40 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-06-23 19:33:40 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@258ac1e6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@491f3fb0, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3d0ce151, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@58a0f75b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2b569858, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1b84d03d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@41d8ac75, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1e1d813a, org.springframework.test.context.event.EventPublishingTestExecutionListener@1964ef9, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3c2e73ce, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3891db3a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4a778943, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7925e772, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@365a4b9b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@240e61]
+2021-06-23 19:33:41 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-23 19:33:41 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-06-23 19:33:41 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-06-23 19:33:41 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
