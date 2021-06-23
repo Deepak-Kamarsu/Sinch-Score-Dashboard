@@ -23,6 +23,15 @@
       
       
 ### UI Screens
+##### Home Page
+![HomePage](https://user-images.githubusercontent.com/8455814/123167620-1006a600-d477-11eb-8a6c-a89a8e0a177d.JPG)
+
+
+
+
+ ##### Category Page
+![CategoryPage](https://user-images.githubusercontent.com/8455814/123167735-3af0fa00-d477-11eb-9658-192ca3e0dc79.JPG)
+
 
       
       
